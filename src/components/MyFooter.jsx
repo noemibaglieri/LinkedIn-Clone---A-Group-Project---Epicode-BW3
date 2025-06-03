@@ -3,7 +3,7 @@ import { Gear, InfoCircle, QuestionCircle } from "react-bootstrap-icons";
 
 const MyFooter = () => {
   return (
-    <footer className="mt-3 text-muted py-4">
+    <footer className="mt-5 text-muted py-4">
       <div className="container">
         <div className="row gy-4">
           {/* Colonna 1 */}
