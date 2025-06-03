@@ -1,10 +1,17 @@
+import { Container, Row } from "react-bootstrap";
 import "./App.css";
+import ColumnProfileRight from "./components/ColumnProfileRight";
 import UserProfileCard from "./components/UserProfileCard";
 
 function App() {
   return (
     <>
-      <UserProfileCard />
+      <Container>
+        <Row>
+          <UserProfileCard />
+          <ColumnProfileRight />
+        </Row>
+      </Container>
     </>
   );
 }
