@@ -4,7 +4,7 @@ import { Pencil } from "react-bootstrap-icons";
 const UserProfileCard = () => {
   return (
     <>
-      <Col>
+      <Col className="mt-3">
         <Card>
           <div className="position-relative">
             <Card.Img

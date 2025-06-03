@@ -8,13 +8,13 @@ const ColumnProfileRight = () => {
   return (
     <Container>
       {/*Lingua e Profilo*/}
-      <div className="bg-light rounded-3 p-3 border mt-3">
+      <div className="bg-white rounded-3 p-3 border mt-3">
         <Row className="border-bottom">
           <Col>
             <h5>Lingua del profilo</h5>
             <p>Italiano</p>
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-end">
             <Pencil size={20} />
           </Col>
         </Row>
@@ -23,13 +23,13 @@ const ColumnProfileRight = () => {
             <h5>Profilo pubblico e URL</h5>
             <p>www.linkedin.com/in/gennaro-guida00</p>
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-end">
             <Pencil size={20} />
           </Col>
         </Row>
       </div>
       {/* Altri profili consultati */}
-      <div className="bg-light rounded-3 p-3 border mt-3">
+      <div className="bg-white rounded-3 p-3 border mt-3">
         <h5 className="m-0">Altri profili consultati</h5>
         <div className="d-flex align-items-center">
           <EyeFill size={15} />
@@ -37,7 +37,7 @@ const ColumnProfileRight = () => {
         </div>
 
         <Row className="mt-3">
-          <Col xs={1}>
+          <Col xs={3}>
             <img
               className="rounded-circle"
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
@@ -56,11 +56,11 @@ const ColumnProfileRight = () => {
       </div>
 
       {/* Persone che potresti conoscere */}
-      <div className="bg-light rounded-3 p-3 border mt-3">
+      <div className="bg-white rounded-3 p-3 border mt-3">
         <h5 className="m-0">Persone che potresti conoscere</h5>
 
         <Row className="mt-3">
-          <Col xs={1}>
+          <Col xs={3}>
             <img
               className="rounded-circle"
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
@@ -82,12 +82,12 @@ const ColumnProfileRight = () => {
       </div>
 
       {/* Potrebbe interessarti */}
-      <div className="bg-light rounded-3 p-3 border mt-3">
+      <div className="bg-white rounded-3 p-3 border mt-3">
         <h5 className="m-0">Potrebbe interessarti</h5>
         <p>Pagine per te</p>
 
         <Row className="mt-3">
-          <Col xs={1}>
+          <Col xs={3}>
             <img
               className="rounded-circle"
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
