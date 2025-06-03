@@ -111,3 +111,16 @@ footer .text-secondary {
 .icon-grey {
   color: #666666;
 }
+
+.analytics-card {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.long-button {
+  border-bottom-left-radius: 0.3rem !important;
+  border-bottom-right-radius: 0.3rem !important;
+}
+
+.long-button:hover {
+  background-color: #f3f3f3 !important;
+}

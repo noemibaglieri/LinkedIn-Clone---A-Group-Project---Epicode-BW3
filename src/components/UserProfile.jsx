@@ -6,6 +6,7 @@ import Activity from "./Activity";
 import MyAnalytics from "./MyAnalytics";
 import Interests from "./Interests";
 import Lingue from "./Lingue";
+import About from "./About";
 
 const UserProfile = () => {
   return (
@@ -13,6 +14,7 @@ const UserProfile = () => {
       <Col md={8}>
         <UserProfileCard />
         <MyAnalytics />
+        <About />
         <Activity />
         <Experiences title="Experience" />
         <Experiences title="Education" />
