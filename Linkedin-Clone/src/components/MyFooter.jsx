@@ -1,5 +1,6 @@
 import React from "react";
 import { Gear, InfoCircle, QuestionCircle } from "react-bootstrap-icons";
+import "./Footer.css";
 
 const MyFooter = () => {
   return (
