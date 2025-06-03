@@ -2,3 +2,23 @@
   font-size: rem;
   color: #666666;
 }
+.btn-custom:hover {
+  background-color: rgb(217, 228, 233);
+  border: solid 2px rgb(12, 36, 92);
+  color: rgb(13, 110, 253);
+}
+.dropdw1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDm0aJovNXb9D5EebdSj3QND1MLcEWCiZA9w&s");
+  width: 70px;
+  height: 70px;
+}
+.text-custom {
+  color: rgb(161, 124, 22);
+  font-size: 14px;
+}
+.class-icon {
+  width: 20px;
+}
+.text-svg {
+  font-size: 12px;
+}
