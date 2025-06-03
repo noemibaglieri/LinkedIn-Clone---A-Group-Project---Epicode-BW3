@@ -10,8 +10,8 @@ function App() {
       <NavBar />
       <Container>
         <UserProfile />
-        <MyFooter />
       </Container>
+      <MyFooter />
     </>
   );
 }

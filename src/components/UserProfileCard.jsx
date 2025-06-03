@@ -5,7 +5,7 @@ const UserProfileCard = () => {
   return (
     <>
       <Col className="mt-3">
-        <Card>
+        <Card className="border">
           <div className="position-relative">
             <Card.Img
               className="banner-image"
@@ -13,7 +13,7 @@ const UserProfileCard = () => {
               src="https://images.pexels.com/photos/8319808/pexels-photo-8319808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
           </div>
-          <div className="position-absolute">
+          <div className="profile-image-div">
             <img
               className="profile-image"
               src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -21,7 +21,7 @@ const UserProfileCard = () => {
               width={200}
             />
           </div>
-          <Card.Body>
+          <Card.Body className="pt-5">
             <Col className="d-flex justify-content-end fs-5">
               <Pencil />
             </Col>
