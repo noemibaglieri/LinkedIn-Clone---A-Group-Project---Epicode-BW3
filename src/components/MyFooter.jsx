@@ -97,7 +97,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Colonna 5: Selezione lingua */}
+          {/* Colonna 5 */}
           <div className="col-12 col-md-3">
             <label htmlFor="language-select" className="form-label fw-bold">
               Seleziona lingua
