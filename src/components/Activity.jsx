@@ -3,7 +3,7 @@ import { ArrowRepeat, Chat, HandThumbsUp, PersonCircle, Share } from "react-boot
 
 const Activity = () => {
   return (
-    <Container className="my-3 bg-white rounded p-4">
+    <Container className="my-3 bg-white rounded p-4 border">
       <h4 className="mb-4">Attività</h4>
       <Row>
         {/* CARD 1 */}

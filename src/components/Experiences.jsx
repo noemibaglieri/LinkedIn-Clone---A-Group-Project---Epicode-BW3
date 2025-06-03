@@ -2,13 +2,13 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Pencil, Plus } from "react-bootstrap-icons";
 import SingleExperience from "./SingleExperience";
 
-const Experiences = () => {
+const Experiences = (props) => {
   return (
     <>
-      <Container className="bg-white p-4 rounded-2 border">
+      <Container className="bg-white p-4 rounded-2 border mt-3">
         <Row className="justify-content-between mb-3">
           <Col md={8}>
-            <h4>Experience</h4>
+            <h4>{props.title}</h4>
           </Col>
           <Col md={2} className="d-flex align-items-center justify-content-end gap-4">
             <Plus className="fs-1" />
