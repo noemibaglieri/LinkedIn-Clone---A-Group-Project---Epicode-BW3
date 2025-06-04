@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import { EyeFill, PersonFill, BarChartLineFill, Search, ArrowRight } from "react-bootstrap-icons";
 
 const MyAnalytics = () => {
