@@ -1,5 +1,8 @@
+import { tn } from "../../token";
+
 export const GET_MY_PROFILE = "GET_MY_PROFILE";
 export const SET_MY_PROFILE_ERROR = "SET_MY_PROFILE_ERROR";
+export const ALL_PROFILE = "ALL_PROFILE";
 const token = import.meta.env.VITE_REACT_APP_MY_TOKEN;
 
 export const getMyProfileAction = () => {
@@ -7,7 +10,7 @@ export const getMyProfileAction = () => {
     try {
       const res = await fetch("https://striveschool-api.herokuapp.com/api/profile/me", {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${tn}`,
         },
       });
 

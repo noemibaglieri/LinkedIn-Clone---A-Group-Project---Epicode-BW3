@@ -1,4 +1,4 @@
-import { GET_MY_PROFILE, SET_MY_PROFILE_ERROR } from "./profileActions";
+import { ALL_PROFILE, GET_MY_PROFILE, SET_MY_PROFILE_ERROR } from "./profileActions";
 
 const initialState = {
   content: null,
@@ -7,6 +7,7 @@ const initialState = {
 
 const myProfileReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ALL_PROFILE:
     case GET_MY_PROFILE:
       return {
         ...state,

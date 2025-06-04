@@ -1,4 +1,6 @@
 import Card from "react-bootstrap/Card";
+import pen from "../assets/pencil.svg";
+import plus from "../assets/plus-lg.svg";
 
 function Lingue() {
   return (
@@ -7,10 +9,10 @@ function Lingue() {
         <Card.Title>Lingue</Card.Title>
         <div className="d-flex align-items-center">
           <div className="btn-pen-plus me-2">
-            <img style={{ width: "20px" }} src="{plus}" alt="più" />
+            <img style={{ width: "30px" }} src={plus} alt="più" />
           </div>
           <div className="btn-pen-plus">
-            <img style={{ width: "20px" }} src="" alt="penna" />
+            <img style={{ width: "20px" }} src={pen} alt="penna" />
           </div>
         </div>
       </Card.Body>

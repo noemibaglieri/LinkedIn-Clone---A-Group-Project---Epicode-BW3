@@ -37,9 +37,7 @@ function Interests() {
             <NavDropdown.Item className="text-wrap" href="#action4">
               Lorem ipsum dolor sit.
             </NavDropdown.Item>
-            <Button variant="outline-dark" className="rounded-pill w-100 btn-interessi-profilo">
-              Visualizza Profilo
-            </Button>
+            <div className="rounded-pill w-100 btn btn-interessi-profilo">Visualizza Profilo</div>
           </div>
         </div>
         <div className="px-2"></div>
