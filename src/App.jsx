@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./App.css";
 import MyFooter from "./components/MyFooter";
 import NavBar from "./components/NavBar";
