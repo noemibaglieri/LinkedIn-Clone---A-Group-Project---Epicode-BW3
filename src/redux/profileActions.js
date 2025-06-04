@@ -1,12 +1,13 @@
 export const GET_MY_PROFILE = "GET_MY_PROFILE";
 export const SET_MY_PROFILE_ERROR = "SET_MY_PROFILE_ERROR";
+const token = import.meta.env.VITE_REACT_APP_MY_TOKEN;
 
 export const getMyProfileAction = () => {
   return async (dispatch) => {
     try {
       const res = await fetch("https://striveschool-api.herokuapp.com/api/profile/me", {
         headers: {
-          Authorization: "Beareer token",
+          Authorization: `Bearer ${token}`,
         },
       });
 

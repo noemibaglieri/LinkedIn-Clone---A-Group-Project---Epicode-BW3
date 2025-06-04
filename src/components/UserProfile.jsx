@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getMyProfileAction } from "../redux/profileActions";
 import { Col, Row } from "react-bootstrap";
 import ColumnProfileRight from "./ColumnProfileRight";
 import UserProfileCard from "./UserProfileCard";
@@ -9,6 +12,12 @@ import Lingue from "./Lingue";
 import About from "./About";
 
 const UserProfile = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMyProfileAction());
+  }, [dispatch]);
+
   return (
     <Row>
       <Col md={8}>
