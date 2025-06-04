@@ -1,16 +1,11 @@
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { Pencil } from "react-bootstrap-icons";
-import { useDispatch, useSelector } from "react-redux";
-import { getMyProfileAction } from "../redux/actions/index.js";
-import { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const UserProfileCard = () => {
-  const dispatch = useDispatch();
   const profile = useSelector((state) => state.myProfileReducer.content);
 
-  useEffect(() => {
-    dispatch(getMyProfileAction());
-  }, [dispatch]);
+  if (!profile) return <p>Caricamento profilo...</p>;
 
   return (
     <>
@@ -28,15 +23,15 @@ const UserProfileCard = () => {
               <img className="profile-image" src={profile.image} alt="personal image" width={200} />
             </div>
           )}
-          <Card.Body className="pt-5">
+          <Card.Body className="pt-5 p-4">
             <Col className="d-flex justify-content-end fs-5">
               <Pencil />
             </Col>
             <Row>
               <Col md={9} className="d-flex flex-column mb-2">
-                <Card.Title>
+                <h3>
                   {profile.name} {profile.surname}
-                </Card.Title>
+                </h3>
                 <Card.Text className="mb-1">{profile.title}</Card.Text>
                 <div className="d-flex gap-2">
                   <span className="country fw-normal mb-1">{profile.area}</span>
