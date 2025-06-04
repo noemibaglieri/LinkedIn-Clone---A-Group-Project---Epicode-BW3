@@ -1,4 +1,4 @@
-import { GET_MY_PROFILE, GET_PROFILE_BY_ID, GET_USER_PROFILES, SET_USER_PROFILES_ERROR, SET_MY_PROFILE_ERROR } from "../actions";
+import { GET_USER_PROFILES, SET_USER_PROFILES_ERROR } from "../actions";
 
 const initialState = {
   content: null,
@@ -6,17 +6,16 @@ const initialState = {
   isLoading: false,
 };
 
-const myProfileReducer = (state = initialState, action) => {
+const allProfilesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_MY_PROFILE:
-    case GET_PROFILE_BY_ID:
+    case GET_USER_PROFILES:
       return {
         ...state,
         content: action.payload,
         error: null,
         isLoading: false,
       };
-    case SET_MY_PROFILE_ERROR:
+    case SET_USER_PROFILES_ERROR:
       return {
         ...state,
         error: action.payload,
@@ -27,4 +26,4 @@ const myProfileReducer = (state = initialState, action) => {
   }
 };
 
-export default myProfileReducer;
+export default allProfilesReducer;
