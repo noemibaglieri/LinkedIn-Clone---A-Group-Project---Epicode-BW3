@@ -1,4 +1,4 @@
-import { GET_MY_PROFILE, GET_PROFILE_BY_ID, GET_USER_PROFILES, SET_USER_PROFILES_ERROR, SET_MY_PROFILE_ERROR } from "../actions";
+import { GET_MY_PROFILE, GET_PROFILE_BY_ID, SET_MY_PROFILE_ERROR } from "../actions";
 
 const initialState = {
   content: null,

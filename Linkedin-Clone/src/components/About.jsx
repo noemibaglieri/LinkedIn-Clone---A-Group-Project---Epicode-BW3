@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { EyeFill, PersonFill, BarChartLineFill, Search, ArrowRight, Plus, Pencil } from "react-bootstrap-icons";
+import { Pencil } from "react-bootstrap-icons";
 
 const About = () => {
   return (
