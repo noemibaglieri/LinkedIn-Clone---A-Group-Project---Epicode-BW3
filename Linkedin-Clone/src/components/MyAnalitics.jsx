@@ -6,7 +6,7 @@ import { EyeFill, PersonFill, BarChartLineFill, Search, ArrowRight } from "react
 
 const MyAnalitics = () => {
   return (
-    <Container>
+    <Container className="p-0">
       {/*Analisi*/}
       <div className="bg-white rounded-3 p-3 border mt-3 position-relative" style={{ minHeight: "250px" }}>
         <Row>
