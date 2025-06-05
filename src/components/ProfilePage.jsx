@@ -3,6 +3,14 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import UserProfileCard from "./UserProfileCard";
 import { getProfileByIdAction } from "../redux/actions";
+import { Col, Row } from "react-bootstrap";
+import MyAnalytics from "./MyAnalytics";
+import About from "./About";
+import Experiences from "./Experiences";
+import Lingue from "./Lingue";
+import Interests from "./Interests";
+import ColumnProfileRight from "./ColumnProfileRight";
+import Activity from "./Activity";
 
 const ProfilePage = () => {
   const { userId } = useParams();
@@ -18,9 +26,22 @@ const ProfilePage = () => {
   if (!profile) return <p>Caricamento...</p>;
 
   return (
-    <div className="mt-4">
-      <UserProfileCard />
-    </div>
+    <Row>
+      <Col md={8}>
+        <UserProfileCard />
+        <MyAnalytics />
+        <About />
+        <Activity />
+        <Experiences title="Experience" />
+        <Experiences title="Education" />
+        <Experiences title="Licenses & certifications" />
+        <Lingue />
+        <Interests />
+      </Col>
+      <Col md={4}>
+        <ColumnProfileRight />
+      </Col>
+    </Row>
   );
 };
 

@@ -124,3 +124,8 @@ footer .text-secondary {
 .long-button:hover {
   background-color: #f3f3f3 !important;
 }
+
+.separator,
+.anonymous-component {
+  display: none;
+}

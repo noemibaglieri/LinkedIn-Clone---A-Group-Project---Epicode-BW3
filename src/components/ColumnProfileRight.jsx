@@ -6,10 +6,12 @@ import { Pencil, PersonPlusFill } from "react-bootstrap-icons";
 import { useEffect } from "react";
 import { getAllUsers } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
 
 const ColumnProfileRight = () => {
   const dispatch = useDispatch();
   const profiles = useSelector((state) => state.allProfilesReducer?.content);
+  const param = useParams();
 
   useEffect(() => {
     dispatch(getAllUsers());
@@ -32,7 +34,7 @@ const ColumnProfileRight = () => {
         <Row className="mt-3">
           <Col>
             <h5>Profilo pubblico e URL</h5>
-            <p>www.linkedin.com/in/gennaro-guida00</p>
+            <p>www.linkedin.com/in/{param.userId}</p>
           </Col>
           <Col className="d-flex justify-content-end">
             <Pencil size={20} />
@@ -53,9 +55,11 @@ const ColumnProfileRight = () => {
                     <img className="rounded-circle object-fit-cover" src={profile.image} height={60} width={60} alt="" />
                   </Col>
                   <Col>
-                    <h6 className="m-0">
-                      {profile.name} {profile.surname}
-                    </h6>
+                    <Link to={`/profile/${profile._id}`} className="text-decoration-none text-dark">
+                      <h6 className="m-0">
+                        {profile.name} {profile.surname}
+                      </h6>
+                    </Link>
                     <p className="m-0">{profile.bio}</p>
                     <Button size="sm" className="rounded-5 mt-1 px-2" variant="outline-dark">
                       <strong>
