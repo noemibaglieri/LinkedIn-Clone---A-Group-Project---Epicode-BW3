@@ -1,26 +1,29 @@
-import { Button, NavDropdown } from "react-bootstrap";
+import { Button, Col, NavDropdown, Row } from "react-bootstrap";
+import { Pencil, Plus } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
 
 function Interests() {
   return (
-    <Card className="mt-3 border">
+    <Card className="p-2 border mt-3">
       <Card.Body>
-        <Card.Title>Interessi</Card.Title>
-        <div className="d-flex gap-3">
+        <Row className="justify-content-between">
+          <Col md={8}>
+            <h5>Interessi</h5>
+          </Col>
+          <Col md={2} className="d-flex align-items-center justify-content-end gap-4">
+            <Plus className="fs-1" />
+            <Pencil className="fs-5" />
+          </Col>
+        </Row>
+        <div className="d-flex gap-3 mb-2">
           <div style={{ fontSize: "14px" }} className="fw-semibold btn-interessi p-2">
             Top Voices
           </div>
           <div style={{ fontSize: "14px" }} className="fw-semibold btn-interessi p-2">
-            Aziennde
+            Companies
           </div>
           <div style={{ fontSize: "14px" }} className="fw-semibold btn-interessi p-2">
-            Gruppi
-          </div>
-          <div style={{ fontSize: "14px" }} className="fw-semibold btn-interessi p-2">
-            Newsletter
-          </div>
-          <div style={{ fontSize: "14px" }} className="fw-semibold btn-interessi p-2">
-            Scuole o università
+            Schools
           </div>
         </div>
         <div className="d-flex px-2">
@@ -35,9 +38,10 @@ function Interests() {
               Nome Cognome
             </NavDropdown.Item>
             <NavDropdown.Item className="text-wrap" href="#action4">
-              Lorem ipsum dolor sit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ut expedita quo fugit, eius inventore dolore vero perspiciatis quasi cum minima hic,
+              sed veritatis, minus ipsam. Ipsam voluptatum exercitationem veritatis.
             </NavDropdown.Item>
-            <Button variant="outline-dark" className="rounded-pill w-100 btn-interessi-profilo">
+            <Button variant="outline-dark" className="rounded-pill w-100 ">
               Visualizza Profilo
             </Button>
           </div>
