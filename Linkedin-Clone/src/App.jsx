@@ -2,7 +2,6 @@ import "./App.css";
 import MyFooter from "./components/MyFooter";
 import NavBar from "./components/NavBar";
 import UserProfile from "./components/UserProfile";
-import { Container } from "react-bootstrap";
 import MyAnalitics from "./components/MyAnalitics";
 
 import { Container } from "react-bootstrap";
